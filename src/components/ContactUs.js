@@ -27,7 +27,7 @@ export const ContactUs = () => {
 
   return (
     <div className="bg-zinc-300">
-      <div className="lg:flex justify-center items-center m-16 pt-10">
+      <div className="lg:flex justify-center items-center m-16">
         <div className="lg:flex-1 mb-4">
           <h1>Let's Chat.</h1>
           <h1>Tell me about your Project.</h1>

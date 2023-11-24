@@ -9,7 +9,7 @@ function Projects() {
       image:
         "https://fdn.gsmarena.com/imgroot/news/20/10/netflix-india-free-weekend/-1200/gsmarena_001.jpg",
       link: "https://www.wikipedia.org",
-      github_link: "https://github.com/ShadmanKhan10",
+      github_link: "https://github.com/ShadmanKhan10/netflix-clone-2.0",
       des_1:
         "Developed Netflix clone web app using React, Google Firebase, and Stripe.",
       des_2:
@@ -84,7 +84,7 @@ function Projects() {
                 </a>
               </div>
               <div className="mt-3 text-white">
-                <strong>TECH USED: </strong>
+                <strong>TECH STACK : </strong>
                 <p>{project.tech_used}</p>
                 <ul className="list-disc">
                   <li>{project.des_1}</li>

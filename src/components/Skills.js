@@ -80,7 +80,9 @@ function Skills() {
       id="skills"
       className="pt-10 pb-4 grid justify-center content-center bg-gray-700 "
     >
-      <h1 className="text-center py-4 text-white font-medium">My Skills</h1>
+      <h1 className="text-center text-blue-600 font-bold py-4">
+        <span className="text-white">My </span>Skills
+      </h1>
       <div className="mb-2 grid grid-cols-2 gap-4 w-[px] sm:grid sm:grid-cols-3 sm:w-[600px] sm:h-[600px] sm:gap-4 lg:grid lg:grid-cols-4 lg:w-[800px] lg:h-[600px] lg:gap-4 ">
         {skillsData.map((skill) => (
           <div

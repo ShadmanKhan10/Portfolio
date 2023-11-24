@@ -26,8 +26,15 @@ function Home() {
     document.body.removeChild(link);
   };
 
-  const [text, setText] = useState("Java");
-  const texts = ["Java", "React.js", "Node.js", "postgreSQL", "mySQL"];
+  const [text, setText] = useState("React.js");
+  const texts = [
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "postgreSQL",
+    "mySQL",
+    "MongoDB",
+  ];
 
   useEffect(() => {
     let currentIndex = 0;
@@ -83,7 +90,10 @@ function Home() {
         </div>
         <div className="p-2 bg-custom-black">
           <div className="flex flex-wrap justify-center m-8">
-            <h1 className="text-white">Welcome to my World</h1>
+            {/* <h1 className="text-white">Welcome to my World</h1> */}
+            <h1 className="text-center text-blue-600 font-bold">
+              <span className="text-white">Welcome to my </span>World!
+            </h1>
             <p className="mt-4 text-white">
               I am a young Full-stack Developer looking to take on the tech
               world by storm. I grew up in Jamshedpur, India. I am a young
@@ -95,33 +105,44 @@ function Home() {
           </div>
           <div className="flex flex-wrap gap-4 justify-center m-4">
             <div className="border-0 text-center w-[350px] h-[300px] pt-8 rounded-xl text-white bg-gray-600 hover:bg-yellow-500 hover:rotate-6 shadow-2xl shadow-yellow-900 border-lime-800 hover:transform transition-transform duration-300">
-              <h2>Random</h2>
-              <strong>School</strong>
-              <p>Stufying in kerala Public School</p>
-              <strong>College</strong>
-              <p>Studying in RVS college</p>
-              <strong>Tuition</strong>
-              <p>I give Tuition Classes</p>
+              <h2 className="text-blue-500">Certification</h2>
+              <strong>Web Development</strong>
+              <p>The Complete Web Developer: Zero to Mastery</p>
+              <strong>Issue Organization</strong>
+              <p>Udemy</p>
+              <a
+                href="https://ude.my/UC-589d4bb8-9e82-4dfc-b683-5475dc61862b"
+                className="no-underline text-white"
+              >
+                <button className="p-2 bg-blue-700 border-0 rounded-sm  hover:bg-teal-500 transition-transform duration-300 transform hover:scale-110">
+                  Certificate
+                </button>
+              </a>
             </div>
 
             <div className="border-0 text-center w-[350px] h-[300px] pt-8 rounded-xl text-white bg-gray-600 hover:bg-yellow-500 hover:scale-105 shadow-2xl shadow-yellow-900 border-lime-800 hover:transform transition-transform duration-300">
-              <h2>Random</h2>
-              <strong>School</strong>
-              <p>Stufying in kerala Public School</p>
-              <strong>College</strong>
-              <p>Studying in RVS college</p>
-              <strong>Tuition</strong>
-              <p>I give Tuition Classes</p>
+              <h2 className="text-blue-500">Education</h2>
+              <strong>College [ 2020 - 2024 ]</strong>
+              <p>R.V.S College of Engineering and Technology, Jamshedpur</p>
+              <strong>School [ 12th ] [ ISC ] [ 2020 ]</strong>
+              <p>Kerala Public School, Kadma</p>
+              <strong>School [ 10th ] [ ICSE ] [ 2018 ]</strong>
+              <p>Kerala Public School, Mango</p>
             </div>
 
             <div className="border-0 text-center w-[350px] h-[300px] pt-8 rounded-xl text-white bg-gray-600 hover:bg-yellow-500 hover:-rotate-6 shadow-2xl shadow-yellow-900 border-lime-800 hover:transform transition-transform duration-300">
-              <h2>Random</h2>
-              <strong>School</strong>
-              <p>Stufying in kerala Public School</p>
-              <strong>College</strong>
-              <p>Studying in RVS college</p>
-              <strong>Tuition</strong>
-              <p>I give Tuition Classes</p>
+              <h3 className="pb-1 text-blue-500">Achievements & Soft Skills</h3>
+              <strong>Achievement</strong>
+              <p className="mb-8">
+                Winner of HACK WITH RVSCET (2021) coding competition.
+              </p>
+              {/* <strong>College</strong>
+              <p>Studying in RVS college</p> */}
+              <strong>Soft-Skills</strong>
+              <p>
+                Fluent English, Communication, Problem-Solving, Team player,
+                Adaptibility
+              </p>
             </div>
           </div>
         </div>
