@@ -49,7 +49,7 @@ function Home() {
           <div className="lg:flex-1 mt-16">
             <div className="pt-4 ml-24 md:ml-36 lg:ml-36">
               <h2 className="animate-pulse sm:animate-bounce mt-8 mb-0 font-semibold md:text-3xl lg:text-4xl">
-                Hell, I'm
+                Hello, I'm
               </h2>
               <h1 className=" text-blue-600 font-bold md:text-5xl lg:text-6xl">
                 <span className="text-black">SHADMAN </span>KHAN
