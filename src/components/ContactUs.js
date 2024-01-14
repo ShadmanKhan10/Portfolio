@@ -18,9 +18,15 @@ export const ContactUs = () => {
       .then(
         (result) => {
           console.log(result.text);
+          // Reset form fields
+          form.current.reset();
+          // Show success alert
+          alert("Email sent successfully");
         },
         (error) => {
           console.log(error.text);
+          // Show error alert
+          alert("Error sending email");
         }
       );
   };

@@ -45,7 +45,7 @@ function About() {
           </div>
 
           <div className="lg:flex-1 lg:flex-col px-4">
-            <h5 className="text-blue-300 font-semibold mb-0">ABOUT ME</h5>
+            <h5 className="text-blue-500 font-semibold mb-0">ABOUT ME</h5>
             <h1 className="font-bold mb-8">I Develope Websites</h1>
             <p>
               I am a passionate and innovative technologist with a deep love for
