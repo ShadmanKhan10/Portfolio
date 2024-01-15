@@ -67,7 +67,7 @@ export const ContactUs = () => {
                 className="w-full my-2 p-2 border-0 rounded-md text-white bg-gray-700 focus:outline-none focus:ring focus:border-blue-300"
                 type="text"
                 placeholder="Name"
-                name="to_name"
+                name="from_name"
               />
               <input
                 className="w-full my-2 p-2 border-0 rounded-md bg-gray-700 text-white focus:outline-none focus:ring focus:border-blue-300"

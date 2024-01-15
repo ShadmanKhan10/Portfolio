@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import profileimage from "./profilepic.png";
-import react from "./HomeLogo/react.png";
-import tailwind from "./HomeLogo/tailwind.jpg";
-import javascript from "./HomeLogo/javascript.png";
-import mongodb from "./HomeLogo/mongodb.png";
-import backgroundImage from "./HomeLogo/backgroundImage.png";
 
 function Home() {
   const handleDownload = () => {
@@ -30,25 +25,6 @@ function Home() {
     // Remove the anchor element from the document
     document.body.removeChild(link);
   };
-
-  const [style, setStyle] = useState({
-    transform: "",
-    WebkitTransform: "",
-    MozTransform: "",
-  });
-
-  function handleMouseMove(event) {
-    const e = -(window.innerWidth / 2 - event.pageX) / 30;
-    const n = -(window.innerHeight / 2 - event.pageY) / 10;
-
-    const newStyle = {
-      transform: `rotateY(${e}deg) rotateX(${n}deg)`,
-      WebkitTransform: `rotateY(${e}deg) rotateX(${n}deg)`,
-      MozTransform: `rotateY(${e}deg) rotateX(${n}deg)`,
-    };
-
-    setStyle(newStyle);
-  }
 
   const [text, setText] = useState("React.js");
   const texts = [
@@ -77,21 +53,16 @@ function Home() {
     <div>
       <section id="home">
         <div className="h-screen lg:flex justify-center items-center bg-third-gray pt-2">
-          <img
-            className="absolute z-0 w-full h-screen"
-            src={backgroundImage}
-            alt="img"
-          />
-          <div className="lg:flex-1 mt-16 z-1">
+          <div className="lg:flex-1 mt-16">
             <div className="pt-4 ml-24 md:ml-36 lg:ml-36">
-              <h2 className="animate-pulse sm:animate-bounce mt-8 mb-0 font-semibold md:text-3xl lg:text-4xl text-white">
+              <h2 className="animate-pulse sm:animate-bounce mt-8 mb-0 font-semibold md:text-3xl lg:text-4xl">
                 Hello, I'm
               </h2>
               <h1 className=" text-blue-600 font-bold md:text-5xl lg:text-6xl">
-                <span className="text-white">SHADMAN </span>KHAN
+                <span className="text-black">SHADMAN </span>KHAN
               </h1>
 
-              <h3 className="mt-4 mb-0 md:text-3xl lg:text-4xl text-white">
+              <h3 className="mt-4 mb-0 md:text-3xl lg:text-4xl">
                 I develop websites using....
               </h3>
 
@@ -109,27 +80,13 @@ function Home() {
             </div>
           </div>
 
-          <div className="lg:flex-1 flex justify-center pt-24 lg:pt-20 z-1">
-            <div className="top" onMouseMove={handleMouseMove}>
-              <div className="perspective">
-                <div className="cards" style={style}>
-                  <img className="thumb" src={profileimage} alt="img" />
-                  <img className="logo1" src={react} alt="img" />
-                  <img className="logo2" src={javascript} alt="img" />
-                  <img className="logo3" src={mongodb} alt="img" />
-                  <img className="logo4" src={tailwind} alt="img" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="lg:flex-1 flex justify-center mt-6 sm:mt-6 md:mt-10">
+          <div className="lg:flex-1 flex justify-center mt-6 sm:mt-6 md:mt-10">
             <img
               className="h-1/2 w-1/2 sm:mt-4 sm:h-1/4 sm:w-1/4 lg:h-1/2 lg:w-1/2 mb-4 rounded-xl shadow-2xl shadow-gray-950 transition-transform transform hover:scale-105 duration-400 "
               src={profileimage}
               alt="img"
             />
-          </div> */}
+          </div>
         </div>
         <div className="p-2 bg-custom-black">
           <div className="flex flex-wrap justify-center m-8">
